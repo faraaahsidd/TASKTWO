@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Client feedback form</title>
+	<style type="text/css">
+		body
+		{
+			text-align: left;
+			background-color: #ffb6c1;
+		}
+		input[type="text"]
+		{
+			border: none;
+			margin-bottom: 15px; 
+			border-bottom: 1px solid black;
+			background-color: #ffb6c1;
+		}
+		.underlinename
+		{
+			width: 300px;
+		}
+		div
+		{
+			width: 300px;
+			height: 320px;
+			left: 15;
+			top: 0;
+		}
+		img-cont
+		{
+			position: relative;
+			overflow: hidden;
+		}
+		.img-cont img
+		{
+			position: absolute;
+			object-fit: cover;
+			transition: 0.8s ease-in-out;
+		}
+		.img1
+		{
+			position: absolute;
+			top: 0;
+			right: 5in;
+			z-index: 2;
+			height: 500px;
+			border-radius: 10px;
+		}
+		.img2
+		{
+			position: absolute;
+			top: 0;
+			right: 5in;
+			z-index: 1;
+			opacity: 0;
+			height: 500px;
+			width: 373.5px;
+			border-radius: 10px;
+		}
+		.img-cont:hover .img1
+		{
+			opacity: 0;
+		}
+		.img-cont:hover .img2
+		{
+			opacity: 1;
+		}
+		button
+		{
+			background-color: #ec407a;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 15px;
+		}
+		button:hover
+		{
+			background-color: #c2185b;
+		}
+	</style>
+</head>
+<body>
+  <h1>First off, Whats your good name?</h1><br>
+  <font size="30px" >
+  First name:<br>
+  <input type="text" name="firstname" class="underlinename" placeholder="ex: Sarah"><br>
+  Last name:<br>
+  <input type="text" name="lastname" class="underlinename" placeholder="ex: khan"><br>
+    </font>
+    <button onclick="window.location.href='TASK2.2APEX.html'" style="width: 150px; height: 50px;" type="button">OK,Next.</button>
+    <div class="img-cont">
+      <img src="image1on2.1TASK.jpg" class="img1">
+      <img src="image2on2.1task.jpg" class="img2">    	    	
+    </div><br>
+  
+</body>
+</html>
