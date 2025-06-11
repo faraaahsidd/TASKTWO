@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Client feedback form</title>
+	<style type="text/css">
+		body
+		{
+			background-color: #ffb6c1;
+		}
+		p
+		{
+			font-size: 35px;
+		}
+		h1
+		{
+			font-size: 50px;
+		}
+		button
+		{
+			background-color: #ec407a;
+			font-size: 20px;
+			cursor: pointer;
+			border-radius: 15px;
+		}
+		button:hover
+		{
+			background-color: #c2185b;
+		}
+		img
+		{
+
+          transform: translate(0.0000009px, -10px);
+          left: 500px;
+		}
+		div
+		{
+			width: 300px;
+			height: 320px;
+			left: 5;
+		}
+		img-cont
+		{
+			position: relative;
+			overflow: hidden;
+		}
+		.img-cont img
+		{
+			position: absolute;
+			object-fit: cover;
+			transition: 0.8s ease-in-out;
+		}
+		.img1
+		{
+			z-index: 2;
+		}
+		.img2
+		{
+			z-index: 1;
+			opacity: 0;
+		}
+		.img-cont:hover .img1
+		{
+			opacity: 0;
+		}
+		.img-cont:hover .img2
+		{
+			opacity: 1;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<center><h1> <b> What Do You Think Of Our Product and Service? </b></h1>
+	<div class="img-cont"> 
+		<img src="page1.jpg" width="270" class="img1">
+		<img src="page1on1.jpg " width="270" class="img2" >
+	</div>
+		<br>
+	<p>Your Feedback Helps Us To Do Even Better Next Time..</p>
+	<button onclick="window.location.href='TASK2.1APEX.html'" style="width: 200px; height: 50px;" type="button" ;>Start Feedback</button>
+	⏱︎ Takes 3 minutes max..
+	</center>
+	</form>
+</body>
+</html>
